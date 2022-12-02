@@ -1,6 +1,7 @@
 def get_total_calories(file):
     result = []
     with open(file) as f:
+        #print([x.split('\n') for x in f.read().split('\n\n')])
         data = f.read().splitlines()
     i = 0
     sum = 0
